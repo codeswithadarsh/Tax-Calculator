@@ -5,6 +5,68 @@ body {
     background-color: #f2f8ff;
 }
 
+/* -------------Header -------------------------------- */
+.headerContainer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background: -webkit-linear-gradient(-30deg,#010164 0%,#5333ed 49%,#2cd4d9 100%);
+    color: #fff;
+    padding: 20px 0;
+}
+.headerH1{
+    font-size: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #026e28;
+    background-color: eafbf0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .headerContainer {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container::before{
+        display: none;
+    }
+    
+}
+
+/* ------------End header------------ */
+
 
 .container {
     max-width: 600px;
@@ -13,8 +75,17 @@ body {
     border: 1px solid #ccc;
     border-radius: 12px;
     background-color: #eafbf0;
-    box-shadow: 0 0 10px #e3ffed;
+    /* box-shadow: 0 0 10px #e3ffed; */
 }
+.container::before {
+    content: "";
+    position: absolute;
+    height: 480px;
+    width: 600px;
+    background: linear-gradient(90deg, purple, green, hotpink);
+    z-index: -1;
+    filter: blur(25px);
+  }
 
 .input-group {
     margin-bottom: 20px;
@@ -62,6 +133,11 @@ button {
     border-radius: 5px;
     width: 80%;
     text-align: center;
+}
+
+#result{
+    font-size: 20px;
+    
 }
 
 .close {
@@ -265,3 +341,64 @@ input:invalid + .error-icon {
     visibility: visible;
     opacity: 1;
   }
+
+
+
+  /* ---------Footer start---------------- */
+  
+  /* Global styles */
+
+.footerContainer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer {
+    background-color: #f2f2f2;
+    color: #000000;
+    padding: 20px 0;
+}
+
+.widget {
+    flex-basis: 30%; /* Each widget takes up 30% of the width */
+}
+
+.widget h2 {
+    margin-top: 0;
+}
+
+.widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.widget ul li {
+    margin-bottom: 10px;
+}
+
+.widget ul li a {
+    color: #2d2b2b;
+    text-decoration: none;
+}
+
+.widget ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .footerContainer {
+        flex-wrap: wrap;
+    }
+    
+    .widget {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+  /* ---------Footer end---------------- */

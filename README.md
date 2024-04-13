@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a web-based Tax Calculator application designed to help users estimate their taxes based on various input parameters such as gross income, extra income, age, and deductions. It provides a user-friendly interface for inputting data and calculates the estimated tax amount based on predefined tax brackets.
+This project is a web-based Tax Calculator application designed to help users estimate their taxes based on various input parameters such as gross income, extra income, age, and deductions.
 
 ## Technologies Used
 
@@ -35,13 +35,19 @@ This project is a web-based Tax Calculator application designed to help users es
 
 ## Screenshots
 
+#### 1. Design for tax calculation based on a users input.
 ![Screenshot 1](/image/pic1.png)
+#### 2. Do not restrict user from entering incorrect values like characters in the number fields
 ![Screenshot 2](/image/pic2.png)
+#### 3. Highlight a error icon to the right of the input field (shown as an example in above and below image as a circle with !). Hovering over it should show the error in a tooltip
 ![Screenshot 3](/image/pic7.png)
+#### 4. Hovering over it should show the message for the Form Filed in a tooltip
 ![Screenshot 4](/image/pic3.png)
 ![Screenshot 5](/image/pic8.png)
+#### 5. Age = 34, Income = 40 Lakhs, no deductions, tax = .3 * (40 - 8) = .3 * 32 = 9.6 Lakhs
 ![Screenshot 6](/image/pic4.png)
 ![Screenshot 7](/image/pic5.png)
+#### 6. Show error when user not select any option.
 ![Screenshot 8](/image/pic6.png)
 
 
