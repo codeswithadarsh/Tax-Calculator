@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     taxForm.addEventListener("submit", function(event) {
         event.preventDefault();
 
-        // Reset errors
+    
         document.querySelectorAll(".error-icon").forEach(icon => icon.classList.remove("active"));
 
         const grossIncome = parseFloat(document.getElementById("grossIncome").value);
